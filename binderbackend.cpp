@@ -24,9 +24,12 @@ int main()
 		//TODO: Create a temporary file you can use the tmpnam() function for this.
 		// E.g. fileName = tmpnam(NULL)
 		char* fileName = tmpnam(NULL);
+
+		printf("File name is : %s", fileName);	
 		//TODO: Open the file and write the bytes of the first program to the file.
 		//These bytes are found in codeArray[progCount]
 
+		
 		FILE* myFile = fopen(fileName,"wb");
 		if(!myFile)
 		{
@@ -39,9 +42,11 @@ int main()
 		}
 		fclose(myFile);
 
-		
+
 		//TODO: Make the file executable: this can be done using chmod(fileName, 0777)
-		system(("chmod("+fileName+", 0777)").c_str());
+		chmod(fileName,0777);
+		
+		
 
 		//TODO: Create a child process using fork
 		pid_t childProcId = fork();
@@ -57,7 +62,8 @@ int main()
 			{
 
 				//TODO: use execlp() in order to turn the child process into the process
-				//running the program in the above file.	
+				//running the program in the above file.
+				
 				if (execlp(fileName, fileName, NULL) < 0)
 				{
 					perror("execlp");
