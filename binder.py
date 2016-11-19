@@ -127,7 +127,9 @@ def compileFile(binderCppFileName, execName):
 	# If the compilation succeeds, print "Compilation succeeded"
 	# If compilation failed, then print "Compilation failed"	
 	# Do not forget to add -std=gnu++11 flag to your compilation line
-	pass
+	compileOutput = Popen(["g++", "/home/ubuntu/Downloads/binderbackend.cpp", "-o", execName, "-std=gnu++11"])
+	print(compileOutput.communicate())
+
 
 
 
