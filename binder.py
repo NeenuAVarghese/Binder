@@ -28,7 +28,7 @@ def getHexDump(execPath):
 	retVal = Popen(["hexdump", "-v", "-e", '\"0x\" 1/1 \"%02X\" \",\"', execPath], stdout=PIPE)
 	retVal = retVal.communicate()[0]
 	if(retVal == None):
-                print("Ret Value is none")
+                print("Return Value is none")
         else:
                 print("Successfully got hex string of the program" + execPath)
 	return retVal
@@ -98,7 +98,6 @@ def generateHeaderFile(execList, fileName):
 	# That is the first element is the size of program 1, the second element
 	# is the size of program 2, etc.
 	for progName in execList:
-		
                 headerFile.write(str(hexSize[numProgs]))
                 numProgs += 1
                 if(numProgs < progCount):

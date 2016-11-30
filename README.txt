@@ -1,4 +1,4 @@
-Assignment 2, CPSC-456, Fall 2016
+﻿Assignment 2, CPSC-456, Fall 2016
 
 Group Members
     - Marjan Farhad    		marzrocks@csu.fullerton.edu   
@@ -58,8 +58,33 @@ Part 1-
 		https://stackoverflow.com/questions/1396443/how-do-antivirus-programs-detect-viruses
 
 Instructions for Part 2: 
+	All the requried files, binder.py and binderbackend.cpp is placed in the Single Machine VM of Neenu Ann Varghese.
+	Files are placed in the following directory /home/ubuntu/Desktop/CPSC456Assignment2/LinuxPart2.
 
+	For running the program:
+		1. Open terminal in the above mentioned folder.
+		2. Type: python binder.py /bin/ls /bin/pwd
+		3. This will create 'codearray.h' header file and compile the binderbackend.cpp file to create the 'bound' file
+		4. Type: ./bound
+	Output:
+		1. Present working directory will be shown 
+		2. Files in the current working directory will be shown
+	
 
-** Extra Credit was implemented for this assignment
+***** Extra Credit was implemented for this assignment
 
 Instructions for Extra Credit: 
+	All the required files,binderWin.py and binderbackendWin.cpp and 2 simple binaries (createFile1.exe and createFile2.exe)is placed in the the Single 	Machine VM of Neenu Ann Varghese.
+	Files are placed in the following directory /home/ubuntu/Desktop/CPSC456Assignment2/WindowsPart2.
+
+	For running the program:
+		1. Copy all the files to a Windows system.
+		2. Make sure that python and g++ is installed on the Windows system. 
+		3. Open cmd in the folder wher you have copied these files.
+		4. Type: python binderWin.cpp <location to the exe1 - createFile1.exe> <location to exe2 - createFile2.exe>
+		5. This will create 'codearray.h' header file and compile the binderbackend.cpp file to create the 'bound.exe' file
+		6. Double click the bound.exe file.
+
+	Output:
+		1. The 2 exe files provided as arguments are responsible for creating 2 txt files: test.txt and test1.txt
+		2. Both the txt files will be created on the present working directory on running the bound.exe file

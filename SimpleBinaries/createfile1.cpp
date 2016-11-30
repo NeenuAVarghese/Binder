@@ -7,7 +7,7 @@ int main()
 	  
 std::ofstream outfile ("test.txt");
 
-outfile << "my text here!" << std::endl;
+outfile << "This is first File!" << std::endl;
 
 outfile.close();
 }
