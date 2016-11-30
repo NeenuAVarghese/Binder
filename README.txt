@@ -34,7 +34,7 @@ Part 1-
 	
 		The same result file was generated, but we renamed the file as result.gif instead and the file is opened using any image viewer. 
 	
-		copy [/b] <source1> + <source2>  <destination> 
+			copy [/b] <source1> + <source2>  <destination> 
 	
 		The copy command in Windows command line copies one or more files from one location to another. /b: Indicates a binary file. The copy /b command treats the source files as binary files and copies them byte by byte to destination file. Also, the effect of /b is dependent on its position in the command line prompt. For instance, if we write copy /b <source> + <source> <destination>, copy copies the entire file, including any end-of-file character, however if we write copy <source> + <source> /b <destination>, copy does not copy the end-file character. Since, we are specifying two files as our sources with + symbol in the middle, copy combines both files into a single file with the filename we specified in destination so in our case our files, fireworks.gif and worm.7z, were combined with the name results.gif. 
 	
