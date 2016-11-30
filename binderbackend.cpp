@@ -24,8 +24,6 @@ int main()
 		//TODO: Create a temporary file you can use the tmpnam() function for this.
 		// E.g. fileName = tmpnam(NULL)
 		char* fileName = tmpnam(NULL);
-
-		printf("File name is : %s", fileName);	
 		//TODO: Open the file and write the bytes of the first program to the file.
 		//These bytes are found in codeArray[progCount]
 
