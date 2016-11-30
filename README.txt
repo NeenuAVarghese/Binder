@@ -59,6 +59,7 @@ Part 1-
 
 Instructions for Part 2: 
 
-Extra Credit: Yes we have implemented extra credit
+
+** Extra Credit was implemented for this assignment
 
 Instructions for Extra Credit: 
